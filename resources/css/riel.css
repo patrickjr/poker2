@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2015, 8:06:19 PM
+    Author     : leebc
+*/
+#wrap{
+    max-width: 1248px;
+    width: 80%;
+    min-width: 1024px;
+    margin: 0 auto;
+    position:relative;
+    clear:both;
+    min-height: 1024px;
+}
+.logo{
+    font-size: 48px;
+    color: #000;
+}
+.small-logo{
+    font-size: 24px;
+    color: #ac2925;
+}
+.info-header{
+    color: #286090;
+    font-size: 18px;
+    font-family: Georgia;
+    float: right;
+}
+.border{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.row-padding{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.row-padding-small{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.center{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.element-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+
+
+element.style {
+}
+.green_button:hover {
+  box-shadow: 0px 0px 10px #cccccc;
+}
+.transition300 {
+  -webkit-transition-property: background 300ms;
+  -moz-transition: background 300ms;
+  -ms-transition: background 300ms;
+  -o-transition: background 300ms;
+  transition: background 300ms;
+}
+.button_highlight {
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
+  text-shadow: 1px 1px 0px #777;
+}
+.green_button {
+  background: #58c17b;
+  background: -moz-linear-gradient(top, rgba(93,211,132,1) 0%, rgba(83,191,119,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(93,211,132,1)), color-stop(100%,rgba(83,191,119,1)));
+  background: -webkit-linear-gradient(top, rgba(93,211,132,1) 0%,rgba(83,191,119,1) 100%);
+  background: -o-linear-gradient(top, rgba(93,211,132,1) 0%,rgba(83,191,119,1) 100%);
+  background: -ms-linear-gradient(top, rgba(93,211,132,1) 0%,rgba(83,191,119,1) 100%);
+  background: linear-gradient(to bottom, rgba(93,211,177,1) 0%,rgba(83,191,119,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dd384', endColorstr='#53bf77',GradientType=0 );
+  border-bottom: 2px solid #408b79;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.button_large {
+  font-size: 18px;
+  padding: 15px 25px;
+}
+.home_button {
+  margin: 40px 15px 0 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+.button, input[type="button"], input[type="submit"] {
+  padding: 7px 14px;
+  display: inline-block;
+  border: 0;
+  font-weight: 500;
+  outline: none;
+  font-size: 32px;
+  cursor: pointer;
+  width: auto;
+  border-radius: 3px;
+  box-shadow: inset 0px -1px 0px 0px rgba(0,0,0, 0.1);
+}
+.grey_button:hover {
+  background: #999999;
+}
+
+.grey_button {
+  background: #aaaaaa;
+  border-bottom: 2px solid #777777;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.regular_button{
+    clear: both;
+}
+.red_button{
+    
+
+  background: #bd2b39;
+  border-bottom: 2px solid #777777;
+  color: #ffffff;
+  border-radius: 5px;
+   // 189, 43, 57
+}
+
+.blue_button{
+  background: #286090;
+  background: -moz-linear-gradient(top, rgba(93,211,132,1) 0%, rgba(83,191,119,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(93,211,132,1)), color-stop(100%,rgba(83,191,119,1)));
+  background: -webkit-linear-gradient(top, rgba(40,96,144,1) 0%,rgba(30,76,131,1) 100%);
+  background: -o-linear-gradient(top, rgba(93,211,132,1) 0%,rgba(83,191,119,1) 100%);
+  background: -ms-linear-gradient(top, rgba(93,211,132,1) 0%,rgba(83,191,119,1) 100%);
+  background: linear-gradient(to bottom, rgba(93,211,177,1) 0%,rgba(40,96,144) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dd384', endColorstr='#53bf77',GradientType=0 );
+  border-bottom: 2px solid #408b79;
+  color: #ffffff;
+  border-radius: 5px;
+}

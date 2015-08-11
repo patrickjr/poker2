@@ -1,0 +1,29 @@
+{{define "register_template"}}
+<form method='post' action = '/register' id ='reg_form' >
+    <label style="" for="new_user_name"></label>
+    <input class ='' style='width: 100px;' type="text" placeholder="username" name="user[name]" id="new_user_name" required/>
+    
+    <label style="" for="new_user_email" ></label>
+    <input class ='' style='width: 100px;' type="text" placeholder="email" name="email" id="new_user_email" required/>
+
+    <label style="" for="new_user_password"></label>
+    <input class ='' style='width: 100px;' type="password" placeholder="password" name="user[password]" id="new_user_password" required/>
+    
+    <div style="display: inline-block">
+        <span id="loader_here" style="visibility: hidden; ">
+            <span class="three-quarters-loader" style="left: 45px; top: 9px;">Loading...</span>
+        </span>
+        <span id="submit_here">
+            <button style="" class="red_button pointer" id="register_button" type="submit">sign up</button>
+        </span>
+    </div>
+    
+    <div class='row'></div>
+
+    <input type="checkbox" id="accept_terms" />
+    <label style="color: #286090" for="accept_terms">
+        <a href='#'>accept terms & conditions</a>
+    </label>
+</form>
+
+{{end}}

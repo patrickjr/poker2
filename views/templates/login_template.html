@@ -1,0 +1,26 @@
+{{define "login_template"}}
+
+<form method='post' action = '/login' id ='login_form'>
+    <label style="" for="user_name"></label>
+    <input style='width: 100px;' type="text" placeholder="username" name="user[name]" id="user_name" required/>
+    
+    <label style="" for="password"></label>
+    <input style='width: 100px;' type="password" placeholder="password" name="user[password]" id="password" required/>
+    
+    <div style="display: inline-block">
+        <span id="loader_login" style="visibility: hidden; ">
+            <span class="three-quarters-loader" style="left: 45px; top: 9px;">Loading...</span>
+        </span>
+        <span id="login_here">
+            <button style="" class="blue_button pointer" id="login_button" type="submit">login</button>
+        </span>
+    </div>
+    
+    <div class='row'></div>
+    
+    <input type="checkbox" name = "user[remember_me]" id="remember_me" value="true"/>
+    <label style="color: #286090" for="user[remember_me]">remember</label>
+    
+    <a href='#' style="padding-left: 12px; color: #286090">forgot password?</a>
+</form>
+{{end}}

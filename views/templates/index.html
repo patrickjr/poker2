@@ -1,0 +1,109 @@
+{{template "header"}}
+
+<body style='margin: 0 auto;' id = 'page_background' >
+<div id='body_wrap' class='body-pop'>
+
+<!-- Navigation Bar Start-->
+<div class='col-12'>
+	<div class='row row-padding-small'></div>
+    <div class='col-4'></div>
+    <div class='col-4' style='text-align: center'>
+    	<nav class = 'poker_nav'>
+        	<a href="/">Home</a>  |
+            <a href="">Play Poker</a>  |
+            <a href="">Poker Rules</a> |
+            <a href="#openModal">About</a>
+
+
+        </nav>
+
+    </div>
+    <div class='col-4'>
+    	<nav class = 'poker_nav' id = 'user_nav_info' style=' padding-left: 40%;'>
+		{{ if eq .Online true }}
+			<a id = 'user_nav_acc' href="">Account</a>  |
+			<a id = 'user_nav_logout' href="/logout">Logout</a>
+		{{ end }}
+        </nav>
+	</div>
+</div>
+<!-- Navigation Bar End-->
+
+
+  <div class='row row-padding'></div><div class='row row-padding'></div><div class='row row-padding'></div>
+  <div class='col-4'></div>
+  <div class='col-4 center'>
+      <span class='poker_logo'>Riel Poker</span>
+      <div class='row'></div>
+  </div>
+  <div class='row row-padding'></div>
+  <div class='col-2'></div>
+  <div class='col-7' id ='login_register' style=''>
+{{ if eq .Online false }} 
+    <div class ='col-12' style='position:relative;'>
+    
+    <div id = 'login' class='button button_large blue_button button_highlight home_button transition300' style='text-align: left; width: 150px;'>
+        Login
+    </div>
+    <div class= 'sign_in' id='sign_in_here'>
+    
+    <div class= 'error' style='color: red; position:absolute; left: 15px;'>
+        <span id='login_error'></span>
+    </div>
+    
+    {{template "login_template"}}
+
+    </div>
+    </div>
+    <div class='row'></div>
+
+    <div class="col-12" style='position:relative'>
+    <div id = 'register' class='button button_large red_button button_highlight home_button transition300' style='width: 150px;'>
+        New User
+    </div>
+    <div class= 'register' id='register_form'>
+    <div class= 'error' style='color: red; position:absolute; left: 15px;'>
+        <span id='email_error'></span>
+    </div>
+    {{template "register_template"}}
+    </div>
+    </div>
+{{ end }}
+  
+  </div> 
+
+ 
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div id="aboutModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+  </div>
+</div>
+
+
+
+
+<script>
+
+$(function(){
+	loginSubmit();
+	registerSubmit();
+	toggleMe('#login', '#sign_in_here');
+	toggleMe('#register','#register_form');     
+});            
+</script>    
+
+
+</body>
+{{template "footer"}}

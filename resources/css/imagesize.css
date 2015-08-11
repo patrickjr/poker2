@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 15, 2015, 9:47:25 PM
+    Author     : yuanmingzhou
+*/
+
+animalview{
+    max-height: 80px;
+    max-width: 800px;
+}
+
+animaltext{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+bigbutton{
+    width: 60px;
+    height: 30px;
+}
