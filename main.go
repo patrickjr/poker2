@@ -72,7 +72,7 @@ func (webApp *webApplication) init() {
 
 func main() {
 	webApp := NewWebApplication()
-	http.HandleFunc("/"			, webApp.Data(controllers.HomePage))
+	http.HandleFunc("/"		, webApp.Data(controllers.HomePage))
 	http.HandleFunc("/about"	, webApp.Data(controllers.About))
 	http.HandleFunc("/login"	, webApp.Data(controllers.Login))
 	http.HandleFunc("/register"	, webApp.Data(controllers.Register))
